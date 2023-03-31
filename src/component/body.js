@@ -25,10 +25,9 @@ const RestrauntCard = ({
   );
 };
 
-function getData(searchTxt, Restaurant) {
-  return Restaurant.filter((restaurant) =>
-    restaurant?.data?.name?.toLowerCase()?.includes(searchTxt?.toLowerCase())
-  );
+function getData(searchTxt, allLinks) {
+  return allLinks.filter((link) =>
+    link?.data?.locality?.toLowerCase()?.includes(searchTxt?.toLowerCase()));
 }
 
 const Body = () => {
