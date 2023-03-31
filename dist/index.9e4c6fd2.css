@@ -1,0 +1,644 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding-bottom: 6rem;
+  position: relative;
+}
+
+.nav {
+  background-color: #fff;
+  border-bottom: 4px solid #ff4b2b;
+  border-radius: 50px 0;
+  justify-content: space-between;
+  padding: 1.4%;
+  display: flex;
+}
+
+.nav a {
+  color: #000;
+  margin-right: -3px;
+  padding: 21px;
+  font-family: tahoma;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all .3s linear;
+}
+
+.nav img {
+  width: auto;
+  height: 45px;
+  margin-left: 20px;
+  padding: 1px;
+}
+
+.items_nav {
+  display: flex;
+}
+
+.title {
+  font-size: 3rem;
+  position: relative;
+}
+
+.title:after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  background-color: #ff4b2b;
+  transition: all .4s ease-in-out;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+}
+
+.container:hover .title:after {
+  width: 100%;
+  left: 0;
+}
+
+.wrapper {
+  min-width: 100px;
+  width: 300px;
+  height: 5vh;
+  justify-content: space-evenly;
+  margin-top: 2%;
+  margin-left: 77%;
+  display: flex;
+  position: relative;
+}
+
+.search-icon {
+  width: 14px;
+  padding-top: 6px;
+  position: absolute;
+  top: 6px;
+  left: 8px;
+}
+
+.search {
+  height: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 5px;
+  outline: 0;
+  padding: 2px 23px 2px 30px;
+}
+
+.search:hover, .search:focus {
+  background-color: #fff;
+  border: 1.5px solid #ff4b2b;
+}
+
+.containerBody {
+  width: 1170px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  display: flex;
+}
+
+.restaurant_card {
+  color: #1c1c1c;
+  background: #fff;
+  border-radius: 7%;
+  flex-basis: 30%;
+  margin: 30px 0;
+  padding: 12px;
+}
+
+.restaurant_card img {
+  width: 340px;
+  height: auto;
+  border-radius: 7%;
+  padding-bottom: 5px;
+}
+
+.shimmerRestaurant_card {
+  color: #1c1c1c;
+  background: #fff;
+  border-radius: 7%;
+  flex-basis: 30%;
+  margin: 30px 0;
+  padding: 12px;
+}
+
+.shimmerRestaurant_img {
+  width: 340px;
+  height: 214px;
+  border-radius: 7%;
+  margin-bottom: 5px;
+}
+
+.restaurant_card_menu {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 12px 0;
+  display: flex;
+}
+
+.restaurant_card p {
+  color: #696969;
+}
+
+.line {
+  border-top: 1px solid #d3d3d3;
+}
+
+.restaurant_address {
+  padding: 10px 0;
+}
+
+.restaurant_card:hover {
+  box-shadow: 0 0 20px 3px #d3d3d3;
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 2px;
+  padding: 0 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer_line {
+  border-bottom: 4px solid #ff4b2b;
+  border-radius: 50px 0;
+}
+
+.body_login {
+  margin: 8% 0 6%;
+  padding-left: 6%;
+  font-family: Montserrat, sans-serif;
+  display: flex;
+}
+
+.icon_login img {
+  width: 70%;
+  height: auto;
+  margin-left: 10%;
+  padding-top: 5%;
+  padding-left: 4rem;
+  display: flex;
+}
+
+.login_container h1 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.login_container p {
+  letter-spacing: .5px;
+  margin: 20px 0 30px;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+}
+
+.login_container span {
+  font-size: 12px;
+}
+
+.login_container a {
+  color: #333;
+  margin: 15px 0;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.login_container button {
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #ff4b2b;
+  border: 1px solid #ff4b2b;
+  border-radius: 20px;
+  padding: 12px 45px;
+  font-size: 12px;
+  font-weight: bold;
+  transition: transform 80ms ease-in;
+}
+
+.login_container button:active {
+  transform: scale(.95);
+}
+
+.login_container button:focus {
+  outline: none;
+}
+
+.login_container button.ghost {
+  background-color: #0000;
+  border-color: #fff;
+}
+
+.form {
+  height: 100%;
+  text-align: center;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  display: flex;
+}
+
+.login_container input {
+  width: 100%;
+  background-color: #eee;
+  border: none;
+  margin: 8px 0;
+  padding: 12px 15px;
+}
+
+.login_container {
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+  background-color: #fff;
+  border-radius: 10px;
+  flex-basis: 170%;
+  margin-left: 6%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 14px 28px #00000040, 0 10px 10px #00000038;
+}
+
+.form-container {
+  height: 100%;
+  transition: all .6s ease-in-out;
+  position: absolute;
+  top: 0;
+}
+
+.sign-in-container {
+  width: 50%;
+  z-index: 2;
+  left: 0;
+}
+
+.login_container.right-panel-active .sign-in-container {
+  transform: translateX(100%);
+}
+
+.sign-up-container {
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+  left: 0;
+}
+
+.login_container.right-panel-active .sign-up-container {
+  opacity: 1;
+  z-index: 5;
+  animation: .6s show;
+  transform: translateX(100%);
+}
+
+@keyframes show {
+  0%, 49.99% {
+    opacity: 0;
+    z-index: 1;
+  }
+
+  50%, 100% {
+    opacity: 1;
+    z-index: 5;
+  }
+}
+
+.overlay-container {
+  width: 50%;
+  height: 100%;
+  z-index: 100;
+  transition: transform .6s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+}
+
+.login_container.right-panel-active .overlay-container {
+  transform: translateX(-100%);
+}
+
+.overlay {
+  background: #ff416c;
+  background: -webkit-linear-gradient(to right, #ff416c, #ff4b2b);
+  color: #fff;
+  height: 100%;
+  width: 200%;
+  background: linear-gradient(to right, #ff416c, #ff4b2b) 0 0 / cover no-repeat;
+  transition: transform .6s ease-in-out;
+  position: relative;
+  left: -100%;
+  transform: translateX(0);
+}
+
+.login_container.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+.overlay-panel {
+  text-align: center;
+  height: 100%;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  transition: transform .6s ease-in-out;
+  display: flex;
+  position: absolute;
+  top: 0;
+  transform: translateX(0);
+}
+
+.overlay-left {
+  transform: translateX(-20%);
+}
+
+.login_container.right-panel-active .overlay-left {
+  transform: translateX(0);
+}
+
+.overlay-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+.login_container.right-panel-active .overlay-right {
+  transform: translateX(20%);
+}
+
+.social-container {
+  margin: 20px 0;
+}
+
+.social-container a {
+  height: 40px;
+  width: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  display: inline-flex;
+}
+
+.contact_icon {
+  width: 38%;
+  height: auto;
+  margin-right: auto;
+}
+
+.contact_icon img {
+  width: 130%;
+  height: auto;
+}
+
+.contact_container {
+  width: 30%;
+  max-width: 100%;
+  min-height: 480px;
+  background-color: #fff;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 14px 28px #00000040, 0 10px 10px #00000038;
+}
+
+.contact_container input {
+  width: 130%;
+  background-color: #eee;
+  border: none;
+  margin: 8px 0;
+  padding: 12px 15px;
+}
+
+.contact_container textarea {
+  width: 120%;
+  height: 60%;
+  margin-top: 15%;
+  margin-bottom: 10%;
+}
+
+.contact_container h1 {
+  margin: 2% auto 19%;
+  font-weight: bold;
+}
+
+.contact_container button {
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #ff4b2b;
+  border: 1px solid #ff4b2b;
+  border-radius: 20px;
+  padding: 12px 45px;
+  font-size: 12px;
+  font-weight: bold;
+  transition: transform 80ms ease-in;
+}
+
+.contact_container button:active {
+  transform: scale(.95);
+}
+
+.login_body {
+  margin: 3%;
+  padding-right: 3%;
+  display: flex;
+}
+
+.restaurant_body_menu {
+  background-color: #ff4b2b;
+  justify-content: space-around;
+  margin: 2% auto;
+  padding: 5% 10%;
+  display: flex;
+}
+
+.restaurant_body_menu div {
+  color: #000;
+  padding: 6%;
+}
+
+.restaurant_body_menu img {
+  width: 508px;
+  height: auto;
+  border-radius: 35px;
+}
+
+.restaurant_body_menu img:hover {
+  box-shadow: 7px 2px 5px #fa4323;
+}
+
+.restaurant_body_menu h3 {
+  font-size: large;
+}
+
+.menuShimmerInnerMenu {
+  width: 40%;
+}
+
+.menuShimmer {
+  background-color: #ff4b2b;
+  justify-content: space-around;
+  margin: 2% auto;
+  padding: 5% 10%;
+  display: flex;
+}
+
+.menuShimmer div {
+  color: #000;
+  padding: 6%;
+}
+
+.menuShimmerImg {
+  width: 508px;
+  height: 320px;
+  background-color: #d6d1d1;
+  border-radius: 7%;
+}
+
+.menuShimmer h3 {
+  background-color: #d6d1d1;
+  font-size: large;
+}
+
+.menuShimmer_list {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.restaurant_body_menu_dishes {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.restaurant_body_menu_dishes img {
+  width: 13rem;
+  height: auto;
+  border-radius: 5%;
+  margin-bottom: 8%;
+}
+
+.restaurant_body_menu_dishes img:hover {
+  opacity: .9;
+}
+
+.pkj_li {
+  width: auto;
+  border: 0 solid #979090;
+  border-bottom-width: 1px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7% auto;
+  display: flex;
+}
+
+.jaya {
+  position: relative;
+}
+
+.tagg {
+  z-index: 1000;
+  color: #fff;
+  background-color: #92ad40;
+  border-radius: 18%;
+  padding: 5px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.tagg:hover {
+  cursor: pointer;
+  background-color: #5f7322;
+}
+
+.cartMenu {
+  margin-top: 30%;
+}
+
+.vimal {
+  justify-content: space-around;
+  display: flex;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+  .containerBody {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .restaurant_card {
+    margin: 4px;
+  }
+}
+
+@keyframes react-loading-skeleton {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.react-loading-skeleton {
+  --base-color: #ebebeb;
+  --highlight-color: #f5f5f5;
+  --animation-duration: 1.5s;
+  --animation-direction: normal;
+  --pseudo-element-display: block;
+  background-color: var(--base-color);
+  width: 100%;
+  z-index: 1;
+  border-radius: .25rem;
+  line-height: 1;
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.react-loading-skeleton:after {
+  content: " ";
+  display: var(--pseudo-element-display);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(90deg, var(--base-color), var(--highlight-color), var(--base-color));
+  animation-name: react-loading-skeleton;
+  animation-direction: var(--animation-direction);
+  animation-duration: var(--animation-duration);
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(-100%);
+}
+
+/*# sourceMappingURL=index.9e4c6fd2.css.map */

@@ -1,6 +1,3 @@
-node_modules
-dist
-
-.gitigonre
+node_modules/
 .parcel-cache
 .DS_Store
