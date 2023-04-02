@@ -36,7 +36,9 @@ I had some issues in order to implement my custom hook due to more than one copy
 - React
 - Parcel
 - Redux-toolkit
+- Joi
 - Shimmer-UI
+
 
 
 
