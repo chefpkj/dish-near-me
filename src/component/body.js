@@ -27,7 +27,7 @@ const RestrauntCard = ({
 
 function getData(searchTxt, allLinks) {
   return allLinks.filter((link) =>
-    link?.data?.locality?.toLowerCase()?.includes(searchTxt?.toLowerCase()));
+    link?.data?.name?.toLowerCase()?.includes(searchTxt?.toLowerCase()));
 }
 
 const Body = () => {
