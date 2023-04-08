@@ -2,7 +2,7 @@
 It is a single-page web application with config-driven UI, uses live Swiggy API for checking out nearby restaurants, including their location, and allows you to search restaurants and add food to your cart to view the final cost.   
 
 ## App Demo
-Link to video
+[Link to video](https://youtu.be/btmSBzbBy0U)
 
 ## To Run App In Your Local Machine
 You need to write the following commands on the terminal screen so that you can run this project locally.
